@@ -38,7 +38,7 @@ if file is not None:
 
     #Can be used wherever a "file-like" object is accepted:
 
-    df= pd.read_csv(file)
+    df= pd.read_csv(file, header=None)
     st.dataframe(df)
     #st.write(df)
     st.title('ECG Graph')
