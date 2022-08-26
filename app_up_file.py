@@ -41,6 +41,7 @@ if file is not None:
     df= pd.read_csv(file)
     st.dataframe(df)
     #st.write(df)
+    st.title('ECG Graph')
     st.line_chart(df.iloc[0,:186])
 
 
